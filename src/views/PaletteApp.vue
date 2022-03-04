@@ -12,7 +12,8 @@
       <div
         class="mini-palette"
         v-for="color in colors"
-        v-bind:key="{
+        v-bind:key="color"
+        v-bind:style="{
           backgroundColor: `rgba(${color.red}, ${color.green}, 200, 0.5)`,
         }"
         v-on:click="showColor(color)"
